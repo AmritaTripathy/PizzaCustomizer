@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pizza Maker</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <h1>Pizza Customizer</h1>
+    <h4>( Please drag and drop the ingredient to make the pizza of your choice )</h4>
+    <div class="pizza-builder">
+      <div id="base-container">
+        <h2>Base</h2>
+        <ul id="base-list">
+          <li class="base" draggable="true">
+            <img
+              src="./assests/base.png"
+              alt="Thin Crust"
+              width="150px"
+              height="120px"
+            />
+            <h4>Thin Crust</h4>
+          </li>
+          <li class="base" draggable="true">
+            <img
+              src="./assests/base1.png"
+              alt="Cheese Busrt"
+              width="150px"
+              height="120px"
+            />
+            <h4>Cheese Burst</h4>
+          </li>
+          <li class="base" draggable="true">
+            <img
+              src="./assests/base2.png"
+              alt="Stuffed based"
+              width="150px"
+              height="130px"
+            />
+            <h4>Stuffed Base</h4>
+          </li>
+         
+        </ul>
+      </div>
+      <div class="pizza-builder__left" id="ingredients-container">
+        <h2>Toppings</h2>
+        <ul id="ingredients-list">
+          <li class="ingredient" draggable="true">
+            <img
+              src="./assests/ingredient.png"
+              alt="Pepperoni"
+              width="120px"
+              height="100px"
+            />
+            <span>Pepperoni</span>
+          </li>
+          <li class="ingredient" draggable="true">
+            <img
+              src="./assests/ingredient1.png"
+              alt="Mushroom"
+              width="100px"
+              height="120px"
+            />
+            <span>Mushroom</span>
+          </li>
+          <li class="ingredient" draggable="true">
+            <img
+              src="./assests/ingredient2.png"
+              alt="Chicken"
+              width="150px"
+              height="120px"
+            />
+            <span>Chicken</span>
+          </li>
+        </ul>
+        <button id="order-button">Place Order</button>
+      </div>
+      <div class="pizza-builder__right">
+        <div id="pizza-dropzone">
+          <span>Drop here</span>
+        </div>
+        <ul id="order-list"></ul>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

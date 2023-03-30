@@ -1,0 +1,171 @@
+/* Global styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("./assests/background.jpg");
+	font-family: Arial, sans-serif;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+h1 {
+	margin: 20px;
+	text-align: center;
+	color: white;
+	font-size: 50px;
+}
+
+h4 {
+	margin: 20px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+
+ul {
+	list-style: none;
+	margin: 20px;
+	padding: 0;
+}
+
+li {
+	margin: 5px 0;
+}
+
+button {
+	margin: 20px;
+	padding: 10px;
+	font-size: 16px;
+	background-color: #008cba;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Pizza builder styles */
+.pizza-builder {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	color: greenyellow;
+	font-size: 20px;
+	text-align: center;
+}
+
+.pizza-builder__left {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pizza-builder__left h2 {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.pizza-builder__left .ingredient {
+	margin: 5px 0;
+	padding: 10px;
+	font-size: 16px;
+
+	color: white;
+
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.base {
+	margin: 5px 0;
+	font-size: 16px;
+	color: black;
+	cursor: pointer;
+	width: 170px;
+}
+
+.base h4 {
+	color: white;
+}
+
+.pizza-builder__left .ingredient:hover {
+	background-color: rgb(70, 69, 69);
+}
+
+.base:hover {
+	background-color: rgb(70, 69, 69);
+}
+
+.pizza-builder__right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pizza-builder__right #pizza-dropzone {
+	width: 250px;
+	height: 250px;
+	border: 2px solid #ddd;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.pizza-builder__right #pizza-dropzone:hover {
+	background-color: #729c51;
+}
+
+.pizza-builder__right .pizza-ingredient {
+	position: absolute;
+	color: white;
+	background-color: #008cba;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pizza-builder__right .pizza-ingredient:hover {
+	cursor: not-allowed;
+}
+
+.pizza-builder__right #order-list {
+	margin-bottom: 20px;
+}
+
+.dropzone-img {
+	height: 30%;
+	width: 30%;
+}
+
+.dropzone-img {
+	height: 30%;
+	width: 30%;
+}
+
+.dropzone-base {
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.dropzone-ingredient {
+	height: 80%;
+	width: 80%;
+	position: absolute;
+}
